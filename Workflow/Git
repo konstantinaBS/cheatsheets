@@ -1,1 +1,17 @@
-lalalo
+Setting up
+1. Fork the repository at GitHub
+2. Git clone the repository locally
+3. There should be 2 remote branches. Your own and bsq.
+4. 'git fetch' brings the changes from all the remotes locally.
+
+New Task
+Each task should have its own branch. 
+1. Create a new branch named after the jira ticket number
+2. Commit your changes and push them at your own remote branch
+3. Meanwhile git fetch and merge the changes from the master into your curernt branch
+4. When the task is complete create an new pull request. Name conventions: 
+- jira_ticket_number: jira_ticket_title / In case there is one
+- [config] jira_ticket_number: jira_ticket_title / In case the change is at confiuration files
+- [error-reporting] jira_ticket_number: jira_ticket_title  / In case the change is on error-reporting plugin
+5. Stathis will review the request and will merge it on master.
+
