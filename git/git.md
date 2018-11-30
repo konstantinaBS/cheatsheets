@@ -16,3 +16,16 @@ This is equivalent to using shelves in intellij
 git reflog expire --all --expire=now
 git gc --prune=now --aggressive
 ```
+
+## Count lines of code in repo
+
+Count all lines
+```
+git ls-files | xargs wc -l
+```
+
+Count lines of files with certain extension
+```
+git ls-files | grep '\.py' | xargs wc -l  # python
+git ls-files | grep '\.clj' | xargs wc -l  # clojure
+```
