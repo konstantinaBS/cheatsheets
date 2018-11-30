@@ -15,3 +15,9 @@ Set default shell to zsh
 Install plugins
 
 ???
+
+
+
+# kill all instances of headless chrome on Mac/Linux
+
+pkill -f "(chrome)?(--headless)"
