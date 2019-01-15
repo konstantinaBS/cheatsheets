@@ -29,3 +29,13 @@ Count lines of files with certain extension
 git ls-files | grep '\.py' | xargs wc -l  # python
 git ls-files | grep '\.clj' | xargs wc -l  # clojure
 ```
+
+
+## Sign your commits
+
+Requires git 2.0.0 and above
+```
+git config commit.gpgsign true # set locally
+git config --global commit.gpgsign true  # set globally
+```
+source: https://github.com/git/git/commit/2af2ef3c85612946cac3f16143b4875c9f31c4d2
